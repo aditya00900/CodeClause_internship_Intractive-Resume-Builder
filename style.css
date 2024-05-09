@@ -1,0 +1,83 @@
+body{
+    background-color: rgb(127, 174, 199);
+}
+@keyframes rainbow-text {
+    0%,100% {
+        color: red;
+    }
+    20% {
+        color: yellow;
+    }
+    40% {
+        color: green;
+    }
+    60% {
+        color: cyan;
+    }
+    80% {
+        color: blue;
+    }
+}
+
+.para span {
+    animation: rainbow-text 6s linear infinite;
+}
+
+
+
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* list-style: none; */
+    padding: 10px;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+    background-color: rgb(116, 182, 217);
+    font-size: 1.35rem;
+    /* position: fixed; */
+    /* z-index: 1000; */
+    
+
+}
+
+.nav-logo{
+    background-image: url("Colorful\ Modern\ Infinity\ Technology\ Free\ Logo\(1\).png");
+    background-size: cover;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+
+.navigation a {
+    color: rgb(20, 20, 20);
+    text-decoration: none;
+}
+
+.buttons{
+    /* display: flex; */
+    justify-content: space-evenly;
+
+}
+
+.para{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    font-size: 4.0rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-left: 300px;
+    margin-right: 300px;
+
+}
+
+.items{
+    margin-top: 50px;
+    margin-left: 100px;
+    
+
+}
+
+.items img {
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6); /* horizontal offset, vertical offset, blur radius, shadow color */
+    margin: 20px; /* Add margin to ensure shadows don't overlap and are visible */
+}

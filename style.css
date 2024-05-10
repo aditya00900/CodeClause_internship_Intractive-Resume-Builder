@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(127, 174, 199);
+    background-color: rgb(134, 175, 197);
 }
 @keyframes rainbow-text {
     0%,100% {
@@ -23,6 +23,30 @@ body{
     animation: rainbow-text 6s linear infinite;
 }
 
+@keyframes shuffle-animation {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-20px) rotate(-5deg);
+    }
+    50% {
+        transform: translateX(20px) rotate(5deg);
+    }
+    75% {
+        transform: translateX(-10px) rotate(-3deg);
+    }
+    100% {
+        transform: translateX(0) rotate(0deg);
+    }
+}
+
+.items img {
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+    margin: 20px;
+    animation: shuffle-animation 5s ease-in-out infinite;
+}
+
 
 
 .navigation{
@@ -32,7 +56,7 @@ body{
     /* list-style: none; */
     padding: 10px;
     box-shadow: 2px 2px 4px rgba(0,0,0,0.6);
-    background-color: rgb(116, 182, 217);
+    background-color: rgb(128, 185, 215);
     font-size: 1.35rem;
     /* position: fixed; */
     /* z-index: 1000; */
